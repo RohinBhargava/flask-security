@@ -22,7 +22,7 @@ from wtforms import BooleanField, Field, HiddenField, PasswordField, \
 from .confirmable import requires_confirmation
 from .utils import _, _datastore, config_value, get_message, hash_password, \
     localize_callback, url_for_security, validate_redirect_url, \
-    verify_and_update_password
+    verify_and_update_password, get_hmac
 
 lazy_gettext = make_lazy_gettext(lambda: localize_callback)
 
